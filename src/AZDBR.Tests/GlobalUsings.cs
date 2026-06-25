@@ -1,0 +1,11 @@
+global using AZDBR.Commands;
+global using AZDBR.Models;
+global using AZDBR.Services;
+global using AZDBR.Tests.Extensions;
+global using AZDBR.Tests.Fakes;
+global using Devlead.Console.Extensions;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Logging.Abstractions;
+global using Spectre.Console.Cli;
+global using Spectre.Console.Testing;

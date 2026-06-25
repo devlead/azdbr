@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AZDBR/AZDBR.csproj" />
+  <Project Path="AZDBR.Tests/AZDBR.Tests.csproj" />
+</Solution>

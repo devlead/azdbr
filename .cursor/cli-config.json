@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(*)",
+      "Read(*)",
+      "Write(*)",
+      "Delete(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "SemanticSearch(*)",
+      "WebFetch(*)",
+      "WebSearch(*)"
+    ]
+  }
+}

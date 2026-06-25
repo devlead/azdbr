@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Azure.Identity" Version="1.21.0" />
+    <PackageVersion Include="Cake.Bridge.DependencyInjection" Version="2026.6.10.661" />
+    <PackageVersion Include="Cake.Common" Version="6.2.0" />
+    <PackageVersion Include="Cake.Testing" Version="6.2.0" />
+    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
+    <PackageVersion Include="Dapper.AOT" Version="1.0.52" />
+    <PackageVersion Include="Dapper" Version="2.1.79" />
+    <PackageVersion Include="Devlead.Console" Version="2026.6.23.767" />
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.5" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.9" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.7.0" />
+    <PackageVersion Include="NSubstitute" Version="5.3.0" />
+    <PackageVersion Include="Spectre.Console" Version="0.57.1" />
+    <PackageVersion Include="Spectre.Console.Testing" Version="0.57.1" />
+    <PackageVersion Include="TUnit" Version="1.56.35" />
+    <PackageVersion Include="Verify.TUnit" Version="31.20.0" />
+  </ItemGroup>
+</Project>
