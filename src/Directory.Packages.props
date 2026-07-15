@@ -11,7 +11,7 @@
     <PackageVersion Include="coverlet.collector" Version="10.0.1" />
     <PackageVersion Include="Dapper.AOT" Version="1.0.52" />
     <PackageVersion Include="Dapper" Version="2.1.79" />
-    <PackageVersion Include="Devlead.Console" Version="2026.6.30.782" />
+    <PackageVersion Include="Devlead.Console" Version="2026.7.15.820" />
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.0.2" />
     <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.10" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.8.1" />
