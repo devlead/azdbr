@@ -20,7 +20,7 @@
     <PackageVersion Include="NSubstitute" Version="6.2.0" />
     <PackageVersion Include="Spectre.Console" Version="0.57.2" />
     <PackageVersion Include="Spectre.Console.Testing" Version="0.57.2" />
-    <PackageVersion Include="TUnit" Version="1.68.4" />
+    <PackageVersion Include="TUnit" Version="1.68.17" />
     <PackageVersion Include="Verify.TUnit" Version="33.1.0" />
   </ItemGroup>
 </Project>
