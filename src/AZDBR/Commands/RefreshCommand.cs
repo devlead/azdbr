@@ -8,7 +8,7 @@ public sealed class RefreshCommand(
     ILogger<RefreshCommand> logger) : AsyncCommand<RefreshSettings>
 {
     /// <inheritdoc />
-    protected override async Task<int> ExecuteAsync(
+    public override async Task<int> ExecuteAsync(
         CommandContext context,
         RefreshSettings settings,
         CancellationToken cancellationToken)

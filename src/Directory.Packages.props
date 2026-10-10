@@ -2,23 +2,26 @@
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <Verify_SponsorshipExemption>OpenSource</Verify_SponsorshipExemption>
+    <Verify_SponsorshipExemptionUntil>$([System.DateTime]::UtcNow.AddMonths(6).ToString('yyyy-MM'))</Verify_SponsorshipExemptionUntil>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Azure.Identity" Version="1.21.0" />
-    <PackageVersion Include="Cake.Bridge.DependencyInjection" Version="2026.9.9.779" />
-    <PackageVersion Include="Cake.Common" Version="6.2.0" />
-    <PackageVersion Include="Cake.Testing" Version="6.2.0" />
-    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
-    <PackageVersion Include="Dapper.AOT" Version="1.0.52" />
-    <PackageVersion Include="Dapper" Version="2.1.79" />
-    <PackageVersion Include="Devlead.Console" Version="2026.9.9.890" />
-    <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.0.3" />
-    <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.12" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.0" />
+    <PackageVersion Include="Cake.Bridge.DependencyInjection" Version="2026.10.10.840" />
+    <PackageVersion Include="Cake.Common" Version="6.3.0" />
+    <PackageVersion Include="Cake.Testing" Version="6.3.0" />
+    <PackageVersion Include="coverlet.collector" Version="10.1.0" />
+    <PackageVersion Include="Dapper.AOT" Version="1.1.0" />
+    <PackageVersion Include="Dapper" Version="2.1.89" />
+    <PackageVersion Include="Devlead.Console" Version="2026.10.9.943" />
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.12" Condition="'$(TargetFramework)' != 'net11.0'" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="11.0.0-rc.1.26425.128" Condition="'$(TargetFramework)' == 'net11.0'" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
     <PackageVersion Include="NSubstitute" Version="6.2.0" />
     <PackageVersion Include="Spectre.Console" Version="0.57.2" />
     <PackageVersion Include="Spectre.Console.Testing" Version="0.57.2" />
-    <PackageVersion Include="TUnit" Version="1.66.27" />
-    <PackageVersion Include="Verify.TUnit" Version="32.0.0" />
+    <PackageVersion Include="TUnit" Version="1.73.19" />
+    <PackageVersion Include="Verify.TUnit" Version="33.3.3" />
   </ItemGroup>
 </Project>
