@@ -1,5 +1,7 @@
 # azdbr
 
+[![NuGet](https://img.shields.io/nuget/v/AZDBR.svg)](https://www.nuget.org/packages/AZDBR)
+
 Azure SQL Database Refresh .NET global tool. Safely refresh a staging or development Azure SQL database from production within the same Microsoft Entra tenant.
 
 ## Install

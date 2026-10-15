@@ -39,6 +39,7 @@
     <PackageReference Include="Devlead.Console" />
     <PackageReference Include="Microsoft.Data.SqlClient" />
     <PackageReference Include="Spectre.Console" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" />
   </ItemGroup>
 
   <ItemGroup>
