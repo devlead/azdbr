@@ -42,6 +42,11 @@ public record BuildData(
         && !string.IsNullOrWhiteSpace(NuGetSource)
         && !string.IsNullOrWhiteSpace(NuGetApiKey);
 
+    public bool ShouldReportDPI() =>
+        !string.IsNullOrWhiteSpace(System.Environment.GetEnvironmentVariable("NuGetReportSettings_Endpoint"))
+        && !string.IsNullOrWhiteSpace(System.Environment.GetEnvironmentVariable("NuGetReportSettings_RuleId"));
+
+
     public string? IntegrationSourceServer { get; } = System.Environment.GetEnvironmentVariable("AZDBR_INTEGRATION_SOURCE_SERVER");
     public string? IntegrationSourceDatabase { get; } = System.Environment.GetEnvironmentVariable("AZDBR_INTEGRATION_SOURCE_DATABASE");
     public string? IntegrationTargetServer { get; } = System.Environment.GetEnvironmentVariable("AZDBR_INTEGRATION_TARGET_SERVER");
