@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="9.0.21" />
+    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="9.0.22" />
     <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.21" />
   </ItemGroup>
 
