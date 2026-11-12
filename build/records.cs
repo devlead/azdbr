@@ -65,9 +65,12 @@ public record BuildData(
         && !string.IsNullOrWhiteSpace(IntegrationTargetServer)
         && !string.IsNullOrWhiteSpace(IntegrationTargetDatabase);
 
+    public bool ShouldPrepareAzureWorkloadIdentity() => IsRunningOnGitHubActions
+        && AzureCredentials.WorkloadIdentitySpecified;
+
     public bool ShouldRunAzureIntegrationTests() =>
         IntegrationRefreshConfigured
-        && (IsLocalBuild || AzureCredentials.AzureCredentialsSpecified);
+        && (IsLocalBuild || AzureCredentials.AzureCredentialsSpecified || ShouldPrepareAzureWorkloadIdentity());
 
     public ICollection<DirectoryPath> DirectoryPathsToClean { get; } =
     [
@@ -87,6 +90,10 @@ public record AzureCredentials(
         && !string.IsNullOrWhiteSpace(ClientId)
         && !string.IsNullOrWhiteSpace(ClientSecret)
         && !string.IsNullOrWhiteSpace(AuthorityHost);
+
+    public bool WorkloadIdentitySpecified { get; } = !string.IsNullOrWhiteSpace(TenantId)
+        && !string.IsNullOrWhiteSpace(ClientId)
+        && string.IsNullOrWhiteSpace(ClientSecret);
 }
 
 internal record ExtensionHelper(Func<string, CakeTaskBuilder> TaskCreate, Func<CakeReport> Run);
